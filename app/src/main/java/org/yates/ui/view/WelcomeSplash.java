@@ -26,8 +26,8 @@ class WelcomeSplash extends JPanel {
 		titleLabel.setFont(titleFont); 
 		description = new JTextArea("This is a text area");
 
-		add(titleLabel, "push, align center, center");
-		add(description);
+		add(titleLabel, "push, align center, center, wrap");
+		add(description, "align center, center");
 
 		log.info("Loaded welcome splash");
 	}
