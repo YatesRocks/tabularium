@@ -1,0 +1,23 @@
+<configuration>
+    <!-- Appender for logfile -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/tabularium.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Console appender for standard output -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="${log.level:-info}">
+        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
