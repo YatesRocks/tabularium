@@ -35,7 +35,8 @@ class WelcomeSplash extends JPanel {
 
 	private JPanel titleDescriptionGroup() {
 		JPanel group = new JPanel();
-		group.add(makeTitle(), "align center, center, wrap");
+		group.setLayout(new MigLayout("wrap"));
+		group.add(makeTitle(), "align center, center");
 		group.add(makeDescription(), "grow, align center, center");
 		return group;
 	}
