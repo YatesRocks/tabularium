@@ -217,3 +217,21 @@
 2023-12-03 13:46:27,601 [AWT-EventQueue-0] INFO  org.yates.ui.MainWindow - Starting
 2023-12-03 13:46:27,751 [AWT-EventQueue-0] INFO  org.yates.ui.TabulariumLaf - Set LaF to class com.formdev.flatlaf.FlatDarkLaf
 2023-12-03 13:46:27,794 [AWT-EventQueue-0] INFO  org.yates.ui.WelcomeSplash - Loaded welcome splash
+2023-12-03 14:14:20,637 [AWT-EventQueue-0] INFO  org.yates.ui.MainWindow - Starting
+2023-12-03 14:14:20,966 [AWT-EventQueue-0] INFO  org.yates.ui.TabulariumLaf - Set LaF to class com.formdev.flatlaf.FlatDarkLaf
+2023-12-03 14:14:21,023 [AWT-EventQueue-0] INFO  org.yates.ui.WelcomeSplash - Loaded welcome splash
+2023-12-03 14:16:52,508 [AWT-EventQueue-0] INFO  org.yates.ui.MainWindow - Starting
+2023-12-03 14:16:52,774 [AWT-EventQueue-0] INFO  org.yates.ui.TabulariumLaf - Set LaF to class com.formdev.flatlaf.FlatDarkLaf
+2023-12-03 14:16:52,825 [AWT-EventQueue-0] INFO  org.yates.ui.WelcomeSplash - Loaded welcome splash
+2023-12-03 14:19:06,894 [AWT-EventQueue-0] INFO  org.yates.ui.MainWindow - Starting
+2023-12-03 14:19:08,776 [AWT-EventQueue-0] INFO  org.yates.ui.TabulariumLaf - Set LaF to class com.formdev.flatlaf.FlatDarkLaf
+2023-12-03 14:19:08,829 [AWT-EventQueue-0] INFO  org.yates.ui.WelcomeSplash - Loaded welcome splash
+2023-12-03 14:19:24,220 [AWT-EventQueue-0] INFO  org.yates.ui.MainWindow - Starting
+2023-12-03 14:19:24,499 [AWT-EventQueue-0] INFO  org.yates.ui.TabulariumLaf - Set LaF to class com.formdev.flatlaf.FlatDarkLaf
+2023-12-03 14:19:24,557 [AWT-EventQueue-0] INFO  org.yates.ui.WelcomeSplash - Loaded welcome splash
+2023-12-03 14:19:46,608 [AWT-EventQueue-0] INFO  org.yates.ui.MainWindow - Starting
+2023-12-03 14:19:46,903 [AWT-EventQueue-0] INFO  org.yates.ui.TabulariumLaf - Set LaF to class com.formdev.flatlaf.FlatDarkLaf
+2023-12-03 14:19:46,954 [AWT-EventQueue-0] INFO  org.yates.ui.WelcomeSplash - Loaded welcome splash
+2023-12-03 14:33:31,490 [AWT-EventQueue-0] INFO  org.yates.ui.MainWindow - Starting
+2023-12-03 14:33:31,654 [AWT-EventQueue-0] INFO  org.yates.ui.TabulariumLaf - Set LaF to class com.formdev.flatlaf.FlatDarkLaf
+2023-12-03 14:33:31,697 [AWT-EventQueue-0] INFO  org.yates.ui.WelcomeSplash - Loaded welcome splash
