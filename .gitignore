@@ -4,4 +4,5 @@
 # Ignore Gradle build output directory
 build
 
-app/logs
+app/logs/**
+app/logs/
