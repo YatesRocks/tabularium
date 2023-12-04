@@ -1,4 +1,4 @@
-package org.yates.ui;
+package org.yates.view;
 
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
