@@ -59,6 +59,7 @@ class DatabasePanel extends JPanel implements FileActions {
 		panel.add(createButton("Add", e -> add()));
 		panel.add(createButton("Edit", e -> edit()));
 		panel.add(createButton("Delete", e -> delete()));
+		panel.add(createButton("Clear", e -> clear()));
 		return panel;
 	}
 
@@ -109,6 +110,10 @@ class DatabasePanel extends JPanel implements FileActions {
 		} else {
 			infoDialog("Please select an item to delete");
 		}
+	}
+
+	private void clear() {
+		model.clearList();
 	}
 
 	private boolean savePrompt() {
