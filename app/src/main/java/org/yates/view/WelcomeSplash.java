@@ -5,6 +5,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextPane;
 import javax.swing.SwingUtilities;
+import javax.swing.JButton;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
@@ -12,20 +13,24 @@ import javax.swing.text.StyleContext;
 import javax.swing.text.BadLocationException;
 
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 import net.miginfocom.swing.MigLayout;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import org.yates.controller.CardChangeListener;
+
 class WelcomeSplash extends JPanel {
 
 	private static final Logger log = LoggerFactory.getLogger(WelcomeSplash.class);
-	private static MigLayout layout;
+	private CardChangeListener cardChangeListener;
 
 	private JLabel makeTitle() {
 		final String titleContent = "Welcome to the Tabularium";
 		JLabel title = new JLabel(titleContent);
-		Font titleFont = new Font("Monospaced", Font.BOLD, 30);
+		Font titleFont = new Font("Serif", Font.BOLD, 30);
 		title.setFont(titleFont);
 		return title;
 	}
@@ -58,20 +63,36 @@ class WelcomeSplash extends JPanel {
         return description;
     }
 
-	private JPanel titleDescriptionGroup() {
+    private JButton createBeginButton() {
+		JButton begin = new JButton("Click here to begin");
+		begin.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (cardChangeListener != null)
+					cardChangeListener.onCardChange("DatabasePanel");
+			}
+		});
+		return begin;
+    }
+
+	private JPanel welcomeBox() {
 		JPanel group = new JPanel();
 		group.setLayout(new MigLayout("wrap"));
 		group.add(makeTitle(), "align center, center");
 		group.add(makeDescription(), "grow, align center, center, width ::100%");
+		group.add(createBeginButton(), "align center, center");
 		return group;
 	}
 
+	public void setCardChangeListener(CardChangeListener listener) {
+		this.cardChangeListener = listener;
+		log.info("Set card change listener to " + listener.getClass());
+	}
+
 	WelcomeSplash() {
-		layout = new MigLayout("debug", "", "");
+		MigLayout layout = new MigLayout("debug, wrap", "", "");
 		setLayout(layout);
 
-		add(titleDescriptionGroup(), "push, align center, center, wrap");
-
-		log.info("Loaded welcome splash");
+		add(welcomeBox(), "push, align center, center");
 	}
 }
